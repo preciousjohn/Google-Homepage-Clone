@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-top: 14px;
+}
+
+nav a{
+    font-size:14px;
+    text-decoration: none;
+    color:rgb(143, 143, 143);
+    display:inline;
+    font-weight: bold;
+    line-height:24px;
+    cursor:pointer;
+    padding: 5px 6.7px;
+    bottom: 5px;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+nav .keypad{
+    width: 23px;
+    padding-top: 5px;
+    margin: auto 4px;
+}
+
+nav .photo{
+    width:2.6%;
+    height: 5%;
+    border-radius:50%;
+    margin: auto 4px;
+}
+
+.main{
+    flex:1;
+}
+
+.main .logo{
+    display:block;
+    margin: 0px auto;
+    margin-top: 107px;
+}
+
+.search-box{
+    width: 580px;
+    margin: 0px auto;
+    position: relative;
+    margin-top:10px;
+    text-align:center;
+}
+
+.search-box .inputbox{
+  
+    border: 1px solid #d9d9d9;
+    font-size: 16px;
+    padding: 13px;
+    border-radius: 25px;
+    width: 100%;
+    outline: none;
+
+}
+
+.search-box .search-icon{
+    position: absolute;
+    top:25px;
+    left: 15px;
+    transform: translateY(-50%);
+    padding-right: 10px;
+    width: 28px;
+    opacity: 5px;
+}
+
+.search-box .voice-search{
+    width:14px;
+    position: absolute;
+    top:13px;
+    right:24px;
+}
+
+.btn{
+    background-color: #f2f2f2;
+    border:1px solid #f2f2f2;
+    border-radius: 4px;
+    color:#6b6b6b;
+    font-size: 13px;
+    font-weight: bold;
+    min-width: 54px;
+    padding: 7px 16px;
+    margin-right:10px;
+    margin-top: 20px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.languages{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+    color:#111;
+}
+
+.languages a{
+    margin-left: 5px;
+    color: #1a0dab;
+}
+.languages a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color:#f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    left:0;
+    padding-top: 8px;
+}
+
+footer a{
+    color: #666;
+    padding: 12px 11px;
+    font-size: small;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.cot{
+    padding: 10px;
+    font-size: small;
+    color: #666;
+}
+
+.left{
+    float:left;
+}
+.right{
+    float: right;
+    padding-right: 25px;
+}
+
+@media (max-width: 600px) {
+    nav .photo{
+        width:8%;
+       
+    }   
+    .search-box{
+        width: 400px;
+        margin: 0px auto;
+        position: relative;
+        margin-top:10px;
+        text-align:center;
+    }
+
+    footer a{
+        padding: 5px;
+    }
+}
